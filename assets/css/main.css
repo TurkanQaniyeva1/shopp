@@ -1,0 +1,440 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+}
+header .container .logo {
+  cursor: pointer;
+}
+@media (max-width: 600px) {
+  header .container .logo {
+    width: 250px;
+  }
+}
+header .container .menu i {
+  display: none;
+}
+@media (max-width: 600px) {
+  header .container .menu i {
+    display: block;
+    font-size: 24px;
+  }
+}
+@media (max-width: 600px) {
+  header .container .menu nav {
+    display: none;
+  }
+}
+header .container .menu nav ul {
+  display: flex;
+}
+header .container .menu nav ul .pages {
+  position: relative;
+}
+header .container .menu nav ul .pages:hover .page ul {
+  display: block;
+  position: absolute;
+  z-index: 3;
+  background-color: #fff;
+}
+header .container .menu nav ul .pages .page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 210px;
+  position: absolute;
+  height: 120px;
+  left: 5px;
+  top: 30px;
+}
+header .container .menu nav ul .pages .page ul {
+  display: none;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+header .container .menu nav ul .pages .page ul li a {
+  transition: 0.4s;
+}
+header .container .menu nav ul .pages .page ul li a:hover {
+  color: red;
+}
+header .container .menu nav ul li a {
+  padding: 30px 20px;
+  font-size: 17px;
+  color: #141517;
+  font-weight: 600;
+  padding: 34px 21px;
+  transition: 0.4s;
+}
+header .container .menu nav ul li a:hover {
+  color: #FF2020;
+  cursor: pointer;
+}
+header .container .menu nav ul li a i {
+  font-size: 9px;
+  font-weight: 600;
+}
+header .container .icons {
+  display: flex;
+  gap: 20px;
+}
+@media (max-width: 600px) {
+  header .container .icons {
+    display: none;
+  }
+}
+header .container .icons i {
+  font-size: 24px;
+  transition: 0.4s;
+}
+header .container .icons i:hover {
+  color: #FF2020;
+  cursor: pointer;
+}
+header .head-btm {
+  background-color: black;
+  color: white;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 600px) {
+  header .head-btm {
+    text-align: center;
+  }
+}
+header .head-btm p {
+  font-size: 17px;
+}
+@media (max-width: 600px) {
+  header .head-btm p {
+    font-size: 14px;
+  }
+}
+header .head-btm p a {
+  color: #CEBD9C !important;
+  font-weight: 500;
+  border-bottom: solid 2px #CEBD9C;
+  padding-bottom: 4px;
+}
+
+main .first {
+  background-image: url(../../../assets/images/h1_hero2.jpg.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+main .first .content-s {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  width: 90%;
+  height: 600px;
+}
+@media (max-width: 600px) {
+  main .first .content-s {
+    width: 100%;
+    height: 385px;
+  }
+}
+main .first .content-s .content {
+  width: 550px;
+  text-align: center;
+}
+@media (max-width: 600px) {
+  main .first .content-s .content {
+    width: 100%;
+  }
+}
+main .first .content-s .content h2 {
+  color: #FF2020;
+  font-family: "Cursive", cursive;
+  font-size: 40px;
+  font-weight: 400;
+  margin-bottom: 1px;
+}
+@media (max-width: 600px) {
+  main .first .content-s .content h2 {
+    font-size: 30px;
+  }
+}
+main .first .content-s .content h1 {
+  font-size: 50px;
+  font-weight: 700;
+  color: #292621;
+  margin-bottom: 2px;
+}
+@media (max-width: 600px) {
+  main .first .content-s .content h1 {
+    font-size: 30px;
+  }
+}
+main .first .content-s .content p {
+  color: #74706B;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+main .first .content-s .content a {
+  background: #292621;
+  font-weight: 500;
+  border: 1px solid #292621;
+  color: #fff;
+  display: inline-block;
+  padding: 15px 47px;
+  font-size: 14px;
+  transition: 0.4s;
+}
+main .first .content-s .content a:hover {
+  background: #fff;
+  color: black;
+  cursor: pointer;
+}
+main .about .title {
+  display: flex;
+  justify-content: space-between;
+  width: 85%;
+  margin: 0 auto;
+  border-bottom: 1px solid #edeff2;
+  align-items: center;
+  margin-top: 30px;
+}
+@media (max-width: 600px) {
+  main .about .title {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+main .about .title .name h2 {
+  color: #292621;
+  font-size: 33px;
+  font-weight: 700;
+  padding: 20px;
+}
+@media (max-width: 600px) {
+  main .about .title .name h2 {
+    font-size: 26px;
+    padding: 20px 0;
+  }
+}
+main .about .title .main ul {
+  display: flex;
+}
+main .about .title .main ul li a {
+  font-family: "Jost", sans-serif;
+  color: #292621;
+  font-weight: 600;
+  padding: 27px 12px;
+  border-bottom: 4px solid transparent;
+  margin-right: 15px;
+  transition: 0.6s;
+}
+@media (max-width: 600px) {
+  main .about .title .main ul li a {
+    font-size: 14px;
+    font-weight: 400;
+    padding: 27px 8px;
+  }
+}
+main .about .title .main ul li a:hover {
+  color: #FF2020;
+  border-bottom: 4px solid #FF2020;
+}
+main .about .title .main ul li a:active {
+  color: #FF2020;
+  border-bottom: 4px solid #FF2020;
+}
+main .about .cards {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 30px;
+}
+@media (max-width: 600px) {
+  main .about .cards {
+    flex-wrap: wrap;
+  }
+}
+main .about .card {
+  width: 300px;
+}
+main .about .card .txt {
+  text-align: center;
+  padding: 10px;
+}
+main .about .card .txt h4 {
+  color: #292621;
+  font-weight: 400;
+  margin-bottom: 6px;
+  transition: 0.4s;
+}
+main .about .card .txt h4:hover {
+  color: #FF2020;
+}
+main .about .card .txt span {
+  padding: 10px;
+  color: #74706B;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 17px;
+  transition: 0.4s;
+}
+main .about .card .txt span:hover {
+  color: #000;
+}
+main .about .card .txt span del {
+  text-decoration: line-through;
+  display: inline-block;
+  color: #CEBD9C;
+  margin-left: 12px;
+}
+main .about .card img {
+  width: 100%;
+}
+
+footer {
+  background-color: #000;
+}
+footer .newsletter {
+  display: flex;
+  align-items: center;
+  padding: 30px;
+  color: #fff;
+  margin-top: 30px;
+  justify-content: space-around;
+  padding-bottom: 40px;
+  margin-bottom: 60px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.14);
+}
+@media (max-width: 600px) {
+  footer .newsletter {
+    flex-wrap: wrap;
+  }
+}
+footer .newsletter h3 {
+  color: #fff;
+  font-family: "Jost", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.3;
+  margin-bottom: 12px;
+}
+footer .newsletter .icons-f i {
+  color: #677F8B;
+  font-size: 24px;
+  display: inline-block;
+  text-align: center;
+  margin-left: 23px;
+  transition: 0.4s;
+}
+footer .newsletter .icons-f i:hover {
+  color: #FF2020;
+  cursor: pointer;
+}
+@media (max-width: 600px) {
+  footer .newsletter .form-m {
+    flex-wrap: wrap;
+  }
+}
+footer .newsletter .form-m form {
+  display: flex;
+}
+@media (max-width: 600px) {
+  footer .newsletter .form-m form {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+footer .newsletter .form-m form input {
+  width: 380px;
+  height: 55px;
+  color: black;
+  padding-left: 5px;
+  background: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 0;
+}
+@media (max-width: 600px) {
+  footer .newsletter .form-m form input {
+    width: 290px;
+    margin-top: 20px;
+  }
+}
+footer .newsletter .form-m form button {
+  width: 130px;
+  height: 55px;
+  background: #FF2020;
+  padding: 13px 24px;
+  color: #fff;
+  margin-left: 5px;
+  cursor: pointer;
+  font-weight: 500;
+  border: none;
+}
+@media (max-width: 600px) {
+  footer .newsletter .form-m form button {
+    width: 290px;
+    margin: 10px 0 20px 0;
+  }
+}
+footer .shop-p {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  width: 79%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  padding: 30px 0;
+}
+@media (max-width: 600px) {
+  footer .shop-p {
+    flex-wrap: wrap;
+  }
+}
+footer .shop-p .shop {
+  cursor: pointer;
+  width: 300px;
+}
+footer .shop-p .men h4 {
+  color: #ffffff;
+  font-size: 18px;
+  margin-bottom: 30px;
+  font-weight: 400;
+}
+footer .shop-p .men ul li {
+  color: #BBB9B5;
+  font-weight: 400;
+  padding-bottom: 10px;
+  transition: 0.3s;
+}
+footer .shop-p .men ul li:hover {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+  cursor: pointer;
+  padding: 2px 0;
+}
+footer .colorlib {
+  border-top: 2px solid rgba(255, 255, 255, 0.14);
+  padding-top: 39px;
+  padding-bottom: 1px;
+}
+footer .colorlib p {
+  color: #BBB9B5;
+  font-weight: 300;
+  text-align: center;
+  padding: 30px;
+}
+footer .colorlib p i {
+  color: #FF2020;
+}
+footer .colorlib p a {
+  color: #FF2020;
+  cursor: pointer;
+}
